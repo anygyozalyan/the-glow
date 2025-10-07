@@ -1,0 +1,235 @@
+.cart-sidebar__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(227, 227, 227, 0.4);
+    z-index: 1500;
+}
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(25rem, 90%);
+    height: 100dvh;
+    background: #fff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+    z-index: 2000;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+}
+
+.cart-sidebar__title {
+    font-weight: 400;
+    color: #000;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.cart-sidebar--open {
+    right: 0;
+}
+
+.cart-sidebar__panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cart-sidebar__items {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.cart-sidebar__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.02rem solid #cbcbcb;
+}
+
+.cart-sidebar__item-img {
+    width: 3.5rem;
+    width: 3.5rem;
+    object-fit: cover;
+    margin-right: 0.5rem;
+}
+
+.cart-sidebar__item-info span {
+    margin: 0 0.5rem;
+}
+
+.cart-sidebar__footer {
+    padding-top: 1rem;
+}
+
+.cart-sidebar__checkout-btn:hover,
+.cart-sidebar__continue-btn:hover {
+    opacity: 0.8;
+
+}
+
+.cart-sidebar__close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    border-radius: 0.3rem;
+    color: #000;
+    padding: 0.3rem 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cart-sidebar__close-btn:hover {
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.cart-sidebar__item-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.cart-sidebar__item-img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex: 0 0 48px;
+}
+
+.cart-sidebar__item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 0;
+}
+
+.cart-sidebar__item-name {
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cart-sidebar__item-quantity {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.cart-sidebar__item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-sidebar__item-price {
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.cart-sidebar__remove-btn {
+    border: none;
+    background: transparent;
+    color: #333;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.cart-sidebar__remove-btn:hover {
+    color: #999;
+}
+
+.cart-sidebar__footer {
+    padding-top: 0.9rem;
+    box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.02);
+}
+
+.cart-sidebar__checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0.45rem;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.cart-sidebar__checkout-btn:hover {
+    opacity: 0.92;
+}
+
+.cart-sidebar__continue-btn {
+    flex: 1;
+    background-color: #e3e2e2;
+    color: #000;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cart-sidebar__continue-btn:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 420px) {
+    .cart-sidebar {
+        padding: 1rem;
+    }
+
+    .cart-sidebar__item-img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .cart-sidebar__item-name {
+        font-size: 0.9rem;
+    }
+
+    .cart-sidebar__close-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .cart-sidebar__title {
+        font-size: 0.8rem;
+    }
+
+    .cart-sidebar__remove-btn,
+    .cart-sidebar__continue-btn {
+        font-size: 0.7rem;
+    }
+}
