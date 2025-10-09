@@ -74,9 +74,13 @@ nav {
     color: #DCAB68;
 }
 
-/* mobile */
+/* mobile menu */
 .mobileBlock {
     display: none;
+}
+
+.burgerMenu {
+    cursor: pointer;
 }
 
 @media (max-width: 53.125rem) {

@@ -1,0 +1,78 @@
+.mobileMenu__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 50;
+}
+
+.mobileMenu__overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.mobileMenu__content {
+    background: #fff;
+    width: 80%;
+    height: 100dvh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.35s ease-in-out;
+    box-shadow: -0.5rem 0 2rem rgba(0, 0, 0, 0.15);
+}
+
+.mobileMenu__overlay.active .mobileMenu__content {
+    transform: translateX(0);
+}
+
+.mobileMenu__closeButton {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111;
+}
+
+.mobileMenu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.mobileMenu__list li {
+    border-bottom: 0.1rem solid #e5e5e5;
+    padding: 1rem 0;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.mobileMenu__list li:hover {
+    border-color: #111;
+    transform: translateX(0.4rem);
+}
+
+.mobileMenu__list a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.123rem;
+    transition: color 0.3s ease;
+}
+
+.mobileMenu__list a:hover {
+    color: #000;
+}

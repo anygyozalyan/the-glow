@@ -8,7 +8,7 @@ import Lottie from 'lottie-react';
 const Home = lazy(() => import('../components/Home/Home'))
 const Catalog = lazy(() => import('../components/Catalog/Catalog'));
 const CartPage = lazy(() => import('../components/cart/CartPage'))
-const CheckoutPage = lazy(() => import('../components/cart/CheckoutPage'));
+const CheckoutPage = lazy(() => import('../components/cart/Checkout/CheckoutPage'));
 const CatalogProductDetails = lazy(() => import('../components/Catalog/CatalogProductDetails'))
 
 
@@ -23,6 +23,8 @@ function AppRoutes() {
 
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<Home />} />
+                    <Route path='/cart' element={<CartPage />} />
+                    <Route path='/checkout' element={<CheckoutPage />} />
                 </Route>
 
                 <Route path="/catalog" element={<CatalogLayout />}>
@@ -30,12 +32,8 @@ function AppRoutes() {
                     <Route path="/catalog/:id" element={<CatalogProductDetails />} />
                 </Route>
 
-                <Route path='/cart' element={<CartPage />} />
-                <Route path='/checkout' element={<CheckoutPage />} />
-
 
             </Routes>
-
         </Suspense>
     );
 }

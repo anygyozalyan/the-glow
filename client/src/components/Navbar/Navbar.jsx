@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import styles from '../Navbar/Navbar.module.css'
 import logo from '../../assets/theGlow-navbar-logo.png'
 import { HiOutlineMenu, HiOutlineShoppingBag } from 'react-icons/hi';
+import MobileBurgerMenu from './MobileBurgerMenu';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => setMenuOpen(prev => !prev);
-
+    const closeMenu = () => setMenuOpen(false);
 
     return (
         <nav>
@@ -43,6 +44,8 @@ function Navbar() {
                 </button>
 
             </div>
+
+            <MobileBurgerMenu isOpen={menuOpen} onClose={closeMenu} />
 
         </nav>
     )
