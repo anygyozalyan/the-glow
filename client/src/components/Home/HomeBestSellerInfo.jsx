@@ -2,7 +2,7 @@ import React from 'react'
 import { HiArrowUp } from "react-icons/hi"
 import styles from './HomeBestSeller.module.css'
 
-function HomeBestSellerInfo() {
+function HomeBestSellerInfo({ name, price, onReadMore }) {
     return (
         <div className={styles['homeBestSeller__info-section']}>
             <div className={styles['homeBestSeller__best-seller-tag']}>
@@ -10,7 +10,7 @@ function HomeBestSellerInfo() {
                 <span>Our Best Seller</span>
             </div>
 
-            <h1 className={styles['homeBestSeller__product-name']}>Yellow Body Butter</h1>
+            <h1 className={styles['homeBestSeller__product-name']}>{name}</h1>
 
             <p className={styles['homeBestSeller__product-description']}>
                 Experience ultimate hydration with our nourishing body butter.
@@ -18,11 +18,11 @@ function HomeBestSellerInfo() {
             </p>
 
             <div className={styles['homeBestSeller__price-container']}>
-                <span className={styles['homeBestSeller__price']}>$30.00</span>
+                <span className={styles['homeBestSeller__price']}>{price}$</span>
             </div>
 
             <div className={styles['homeBestSeller__actions']}>
-                <button className={styles['homeBestSeller__add-to-cart-btn']}>
+                <button className={styles['homeBestSeller__add-to-cart-btn']} onClick={onReadMore}>
                     Read More
                 </button>
             </div>

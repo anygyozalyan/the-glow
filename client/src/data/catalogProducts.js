@@ -1,5 +1,5 @@
 export const catalogProducts = [
-    { id: 1, name: "Rosemarin body oil", price: 60, img: '/images/1.png', category: "body" },
+    { id: 1, name: "Rosemarin body oil", price: 60, img: '/images/1.png', slideImages: ['/images/1.png', '/images/2.png', '/images/3.png'], category: "body" },
     { id: 2, name: "Mango body butter", price: 60, img: '/images/2.png', category: "body" },
     { id: 3, name: "Olive hair oil", price: 60, img: '/images/3.png', category: "hair" },
     { id: 4, name: "Strawberry hair scrub", price: 60, img: '/images/4.png', category: "hair" },

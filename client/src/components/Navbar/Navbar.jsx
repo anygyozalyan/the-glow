@@ -39,10 +39,6 @@ function Navbar() {
                     <HiOutlineMenu className={styles.icon} />
                 </button>
 
-                <button className={styles.shoppingBag}>
-                    <HiOutlineShoppingBag className={styles.icon} />
-                </button>
-
             </div>
 
             <MobileBurgerMenu isOpen={menuOpen} onClose={closeMenu} />

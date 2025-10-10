@@ -34,10 +34,10 @@ function Catalog() {
 
     return (
         <section className={styles.catalog}>
-            <p className={styles["catalog__top-text"]}>
-                The brand’s goal is to give a feeling of luxury. We create body, hair, and face care products designed not only
-                to nourish and protect your skin, but also to bring everyday moments of self-care into the world of elegance and comfort.
-            </p>
+            <div className={styles["catalog__top-container"]}>
+                <p className={styles["catalog__top-text"]}> The brand’s goal is to give a feeling of luxury. We create body, hair, and face care products designed not only
+                    to nourish and protect your skin, but also to bring everyday moments of self-care into the world of elegance and comfort.</p>
+            </div>
 
             <ProductList
                 products={filteredProducts.slice(0, visibleCount)}

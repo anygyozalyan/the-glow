@@ -1,9 +1,8 @@
 .breadcrumbs {
-    max-width: 87rem;
     width: 100%;
-    margin: 0 auto;
-    padding: 1rem 1rem;
     box-sizing: border-box;
+    padding: 1rem 0.5rem;
+    background: transparent;
 }
 
 .breadcrumbs__list {

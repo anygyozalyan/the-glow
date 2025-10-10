@@ -10,34 +10,36 @@ const Breadcrumbs = () => {
 
     return (
         <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
-            <ul className={styles['breadcrumbs__list']}>
-                {breadcrumbs.map((crumb, index) => {
-                    const isLast = index === breadcrumbs.length - 1;
-                    return (
-                        <li
-                            key={crumb.path}
-                            className={styles['breadcrumbs__item']}
-                            aria-current={isLast ? 'page' : undefined}
-                        >
-                            {!isLast ? (
-                                <>
-                                    <Link
-                                        to={crumb.path}
-                                        className={styles['breadcrumbs__link']}
-                                    >
+            <div className="container">
+                <ul className={styles['breadcrumbs__list']}>
+                    {breadcrumbs.map((crumb, index) => {
+                        const isLast = index === breadcrumbs.length - 1;
+                        return (
+                            <li
+                                key={crumb.path}
+                                className={styles['breadcrumbs__item']}
+                                aria-current={isLast ? 'page' : undefined}
+                            >
+                                {!isLast ? (
+                                    <>
+                                        <Link
+                                            to={crumb.path}
+                                            className={styles['breadcrumbs__link']}
+                                        >
+                                            {crumb.name}
+                                        </Link>
+                                        <span className={styles['breadcrumbs__separator']}>/</span>
+                                    </>
+                                ) : (
+                                    <span className={styles['breadcrumbs__current']}>
                                         {crumb.name}
-                                    </Link>
-                                    <span className={styles['breadcrumbs__separator']}>/</span>
-                                </>
-                            ) : (
-                                <span className={styles['breadcrumbs__current']}>
-                                    {crumb.name}
-                                </span>
-                            )}
-                        </li>
-                    );
-                })}
-            </ul>
+                                    </span>
+                                )}
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
         </nav>
     );
 };

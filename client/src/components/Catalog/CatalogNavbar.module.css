@@ -1,9 +1,9 @@
 .catalog__navbar {
-    max-width: 1400px;
+    max-width: 88rem;
     width: 100%;
     margin: 0 auto;
+    padding-top: 1rem;
     display: flex;
-    padding: 0.5rem 1rem;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
