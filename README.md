@@ -6,16 +6,16 @@ It’s a complete **e-commerce frontend** featuring all the core functionality a
 ---
 ## ✨ Key Features
 
-- 📱 Fully **responsive design** for all screen sizes  
-- 🛒 **Shopping cart** with add/remove item functionality  
-- 💳 **Checkout page** for order placement  
-- 🔍 **Product search** implemented with **Flag.js**  
-- 🧭 **Sidebar menu** and intuitive navigation  
-- 📂 Data stored locally in **JSON** format (inside the `data` folder)  
-- ⚙️ **State management** with **Redux**  
-- 🌐 **Routing** implemented using **React Router (BrowserRouter)**  
-- 🧠 **React Context API** used to avoid props drilling  
-- 🧪 **Unit tests** written with **Vitest**
+-  Fully **responsive design** for all screen sizes  
+-  **Shopping cart** with add/remove item functionality  
+-  **Checkout page** for order placement  
+-  **Product search** implemented with **Flag.js**  
+-  **Sidebar menu** and intuitive navigation  
+-  Data stored locally in **JSON** format (inside the `data` folder)  
+-  **State management** with **Redux**  
+-  **Routing** implemented using **React Router (BrowserRouter)**  
+-  **React Context API** used to avoid props drilling  
+-  **Unit tests** written with **Vitest**
 
 ---
 
