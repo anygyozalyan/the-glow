@@ -84,7 +84,7 @@
     opacity: 0.6;
 }
 
-@media(max-width: 545px) {
+@media(max-width: 34.0625rem) {
     .search__icon {
         font-size: 1.5rem;
     }
@@ -98,7 +98,7 @@
     }
 }
 
-@media(max-width: 430px) {
+@media(max-width: 26.875rem) {
     .search__icon {
         font-size: 1.3rem;
     }
@@ -108,7 +108,7 @@
     }
 }
 
-@media(max-width: 340px) {
+@media(max-width: 21.25rem) {
 
     .search__icon {
         font-size: 1.2rem;

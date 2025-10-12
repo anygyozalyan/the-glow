@@ -1,5 +1,4 @@
 .homeCategory {
-    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -22,7 +21,7 @@
 }
 
 .navBtn {
-    font-size: 23px;
+    font-size: 1.4375rem;
 }
 
 .homeCategoryBlock {
@@ -30,17 +29,17 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     background-color: transparent;
 }
 
 .categories {
     position: relative;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     background-color: rgba(128, 128, 128, 0.2);
     padding: 0 1rem 1rem 1rem;
     overflow: hidden;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(1.875rem);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.4s ease;
 }
@@ -82,7 +81,7 @@
     width: 100%;
     aspect-ratio: 1/1;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     object-fit: contain;
 }
 
@@ -95,8 +94,8 @@
 
 .categoriesTop .arrowUpIcon {
     transform: rotate(37deg);
-    width: 17px;
-    height: 17px;
+    width: 1.0625rem;
+    height: 1.0625rem;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -113,13 +112,13 @@
 }
 
 
-@media(max-width:968px) {
+@media(max-width:60.5rem) {
     .homeCategory {
         margin-top: 1.5rem;
     }
 }
 
-@media(max-width:550px) {
+@media(max-width:34.375rem) {
     .categoriesTop .categoryName {
         font-size: 1rem;
     }

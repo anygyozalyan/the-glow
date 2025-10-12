@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import MainLayout from '../components/Layout/MainLayout';
 import CatalogLayout from '../components/Layout/CatalogLayout';
 import loadingAnimation from '../assets/loading.json';
+import ScrollToTop from '../components/shared/ScrollToTop';
+import NotFound from '../components/NotFound/NotFound';
 import Lottie from 'lottie-react';
 // pages
 const Home = lazy(() => import('../components/Home/Home'))
@@ -10,6 +12,7 @@ const Catalog = lazy(() => import('../components/Catalog/Catalog'));
 const CartPage = lazy(() => import('../components/cart/CartPage'))
 const CheckoutPage = lazy(() => import('../components/cart/Checkout/CheckoutPage'));
 const CatalogProductDetails = lazy(() => import('../components/Catalog/CatalogProductDetails'))
+const AboutUs = lazy(() => import('../components/About/AboutUs'))
 
 
 function AppRoutes() {
@@ -19,12 +22,17 @@ function AppRoutes() {
                 <Lottie animationData={loadingAnimation} loop={true} style={{ width: 200, height: 200 }} />
             </div>
         }>
+
+            <ScrollToTop />
+
             <Routes>
 
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<Home />} />
                     <Route path='/cart' element={<CartPage />} />
                     <Route path='/checkout' element={<CheckoutPage />} />
+                    <Route path='/about-us' element={<AboutUs />} />
+                    <Route path="*" element={<NotFound />} />
                 </Route>
 
                 <Route path="/catalog" element={<CatalogLayout />}>

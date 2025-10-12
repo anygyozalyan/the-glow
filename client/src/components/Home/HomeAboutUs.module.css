@@ -1,5 +1,4 @@
 .homeAbout {
-    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
     margin-top: 3rem;
@@ -18,8 +17,8 @@
     text-decoration: none;
     color: #000;
     font-size: 1.2rem;
-    border-radius: 30px;
-    border: 3px solid #DCAB68;
+    border-radius: 1.875rem;
+    border: 0.1875rem solid #DCAB68;
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
@@ -36,7 +35,7 @@
     background: #DCAB68;
     transition: left 0.4s ease;
     z-index: -1;
-    border-radius: 30px;
+    border-radius: 1.875rem;
 }
 
 .homeAboutButton:hover::after {
@@ -50,26 +49,26 @@
 
 .homeAboutButton:hover svg,
 .homeAboutButton:hover i {
-    transform: translateX(4px);
+    transform: translateX(0.25rem);
     transition: transform 0.3s ease;
 }
 
 .homeAboutText {
-    max-width: 700px;
+    max-width: 43.75rem;
     font-size: 1.3rem;
     text-align: justify;
     text-justify: inter-word;
-    line-height: 30px;
+    line-height: 1.875rem;
     margin: 0;
 }
 
 .homeAboutButton .arrowUpIcon {
     transform: rotate(47deg);
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5rem) {
     .homeAbout {
         flex-direction: column-reverse;
         gap: 1.5rem;
@@ -80,14 +79,14 @@
     }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 29.25rem) {
     .homeAbout {
         gap: 1rem;
     }
 
     .homeAboutText {
         font-size: 1.1rem;
-        line-height: 28px;
+        line-height: 1.75rem;
     }
 
     .homeAboutButton {
@@ -95,20 +94,20 @@
     }
 
     .homeAboutButton .arrowUpIcon {
-        width: 14px;
-        height: 14px;
+        width: 0.875rem;
+        height: 0.875rem;
     }
 }
 
-@media (max-width: 398px) {
+@media (max-width: 24.875rem) {
 
     .homeAboutText {
         font-size: 1rem;
-        line-height: 26px;
+        line-height: 1.625rem;
     }
 
     .homeAboutButton {
-        font-size: 15px;
+        font-size: 0.9375rem;
     }
 
 }

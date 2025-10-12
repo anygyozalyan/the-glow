@@ -22,11 +22,22 @@ function Navbar() {
 
                 <ul className={styles.list}>
                     <li><Link to="/catalog" className={styles.link}>Catalog</Link></li>
-                    <li><Link to="" className={styles.link}>About us</Link></li>
-                    <li><Link to="" className={styles.link}>Reviews</Link></li>
+                    <li><Link to="/about-us" className={styles.link}>About us</Link></li>
+                    <li>
+                        <a
+                            href="https://www.instagram.com/your_instagram_page"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.link}
+                            aria-label="Visit our Instagram for reviews"
+                        >
+                            Reviews
+                        </a>
+                    </li>
                 </ul>
-
-                <a href="" className={styles.contactUsLink}>Contact us</a>
+                <a href="tel:+374XXXXXXXX" className={styles.contactUsLink}>
+                    Contact us
+                </a>
 
             </div>
 

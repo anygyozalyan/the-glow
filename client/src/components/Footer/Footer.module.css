@@ -142,9 +142,7 @@
     gap: 0.3rem;
 }
 
-
-
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 
     .footer {
         padding: 1.5rem 1rem;

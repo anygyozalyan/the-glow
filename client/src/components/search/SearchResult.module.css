@@ -5,8 +5,8 @@
     right: 0;
     padding: 0.4rem 0.5rem 0.3rem 0.5rem;
     background: rgba(120, 120, 120, 0.25);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(13px);
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.8125rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -77,7 +77,7 @@
 .seeAllBtn {
     padding: 0.6rem 1rem;
     background: #000;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(0.5rem);
     cursor: pointer;
     color: #fff;
     border: none;
@@ -90,7 +90,7 @@
 
 .seeAllBtn:hover {
     background: #DCAB68;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(13px);
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.8125rem);
     color: #000;
 }

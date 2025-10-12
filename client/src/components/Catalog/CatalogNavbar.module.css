@@ -11,6 +11,7 @@
 
 .logo {
     width: 10rem;
+    cursor: pointer;
 }
 
 .navbar__right-block {
@@ -139,7 +140,7 @@
 
 
 
-@media(max-width: 698px) {
+@media(max-width: 43.625rem) {
     .categories {
         display: none;
     }
@@ -158,7 +159,7 @@
     }
 }
 
-@media(max-width: 545px) {
+@media(max-width: 34.0625rem) {
 
     .logo {
         width: 8.2rem;
@@ -174,7 +175,7 @@
     }
 }
 
-@media(max-width: 430px) {
+@media(max-width: 26.875rem) {
     .logo {
         width: 6.9rem;
     }
@@ -193,7 +194,7 @@
     }
 }
 
-@media(max-width: 340px) {
+@media(max-width: 21.25rem) {
 
     .logo {
         width: 6rem;

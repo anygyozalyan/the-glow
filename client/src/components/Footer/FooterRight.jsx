@@ -9,9 +9,19 @@ function FooterRight() {
         <div className={styles.footer__right}>
             <nav className={styles.footer__nav}>
                 <Link to="/catalog" className={styles.footer__navLink}>Catalog</Link>
-                <Link to="/about" className={styles.footer__navLink}>About us</Link>
-                <Link to="/reviews" className={styles.footer__navLink}>Reviews</Link>
-                <Link to="/contact" className={styles.footer__navLink}>Contact us</Link>
+                <Link to="/about-us" className={styles.footer__navLink}>About us</Link>
+                <a
+                    href="https://www.instagram.com/your_instagram_page"
+                    className={styles.footer__navLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our Instagram for reviews"
+                >
+                    Reviews
+                </a>
+                <a href="tel:+374XXXXXXXX" className={styles.footer__navLink}>
+                    Contact us
+                </a>
             </nav>
 
             <div className={styles.footer__brand}>
